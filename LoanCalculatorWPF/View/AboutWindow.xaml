@@ -1,0 +1,37 @@
+﻿<Window x:Class="LoanCalculatorWPF.View.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        mc:Ignorable="d"
+        Title="About" Height="300" Width="300">
+    <Window.Resources>
+        <Style x:Key="tbStandardStyle" TargetType="TextBlock" >
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="imgLogoProgramu" Source="images/euro.png" Width="75" Margin="10"/>
+        <TextBlock x:Name="tbNazwa" Grid.Column="1" FontSize="16" Text="Loan Calculator" VerticalAlignment="Center" />
+        <TextBlock Grid.Row="1" Text="Author" Style="{StaticResource tbStandardStyle}"/>
+        <TextBlock Grid.Row="2" Text="Version" Style="{StaticResource tbStandardStyle}"/>
+        <TextBlock Grid.Row="3" Text="Contact" Style="{StaticResource tbStandardStyle}" />
+        <TextBlock Grid.Row="4" Text="Info" Style="{StaticResource tbStandardStyle}" />
+        <TextBlock x:Name="tbAutor" Grid.Column="1" Grid.Row="1" Text="Łukasz Olszewski" />
+        <TextBlock x:Name="tbWersja" Grid.Column="1" Grid.Row="2" Text="1.0.0.1" />
+        <TextBlock x:Name="tbKontakt" Grid.Column="1" Grid.Row="3" Text="lukasz.olszewski@protonmail.com" />
+        <TextBlock x:Name="tbInformacje" Grid.Column="1" Grid.Row="4" Text="Icons made by Smashicons (https://smashicons.com) from www.flaticon.com is licensed by CC 3.0 BY" TextWrapping="Wrap" FontSize="8"/>
+    </Grid>
+</Window>

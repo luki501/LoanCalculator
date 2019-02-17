@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LoanCalculatorWPF.Model.Installment" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAAQAIAAEIAAACCAAAACCAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Installment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.LoanGatewayFactory">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\LoanGatewayFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.APaybackPlan">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAIAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Payback\APaybackPlan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Installments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.LoanPayback" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Payback\LoanPayback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.Proposal" Collapsed="true">
+    <Position X="1.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAAAAAAAAAACAAAAAgAAAAAAAAAQAQAA=</HashCode>
+      <FileName>Model\Proposal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TypeOfLoan" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.Loans.ALoan" Collapsed="true">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQAAAAAAACQAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Model\Loans\ALoan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.Loans.CarLoan" Collapsed="true">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQAAAAAAACQAAAAQAAAAAAAAACIAAEA=</HashCode>
+      <FileName>Model\Loans\CarLoan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoanCalculatorWPF.Model.Loans.HousingLoan" Collapsed="true">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQAAAAAAACQAAAAQAAAAAAAAACIAAEA=</HashCode>
+      <FileName>Model\Loans\HousingLoan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoanCalculatorWPF.ViewModel.MainViewModel" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIJAAJQAABBEABAgBAAACAiIAAEAgAAFAgAAAAaAQAA=</HashCode>
+      <FileName>ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Plan" />
+      <Property Name="TypeOfLoan" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="LoanCalculatorWPF.Model.ILoanGateway">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQAAAAAAACQAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Model\ILoanGateway.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="LoanCalculatorWPF.Model.LoanType" Collapsed="true">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Model\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
